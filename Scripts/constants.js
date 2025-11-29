@@ -41,6 +41,10 @@ const sounds = {
     mushroom : AUDIOPATH + 'mushroom.wav',
     shell : AUDIOPATH + 'shell.wav',
     shoot : AUDIOPATH + 'shoot.wav',
+    grow  : AUDIOPATH + 'grow.wav',
+    die : AUDIOPATH + 'die.wav',
+    invincibility : AUDIOPATH + 'invincibility.mp3',
+    success : AUDIOPATH + 'success.wav'
 }
 const death_modes = {
     normal : 0,

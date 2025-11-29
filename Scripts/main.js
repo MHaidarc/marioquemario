@@ -226,8 +226,8 @@ var Level = Base.extend({
 		console.log(label)
 	},
 	playMusic: function(label) {
-		if(this.sounds)
-			this.sounds.sideMusic(label);
+		var music = new Audio(sounds[label]);
+		music.play();
 	},
 	reset: function() {
 		this.active = false;
@@ -898,7 +898,8 @@ var Coin = Item.extend({
 	},
 	activate: function(from) {
 		if(!this.activated) {
-			this.level.playSound('coin');
+			var audio = new Audio(sounds.coin);
+			audio.play();
 			from.addCoin();
 			this.remove();
 		}
@@ -1021,7 +1022,8 @@ var Star = ItemFigure.extend({
 	release: function() {
 		this.taken = 4;
 		this.active = true;
-		this.level.playSound('mushroom');
+		var audio = new Audio(sounds.mushroom);
+		audio.play();
 		this.view.show();
 		this.setVelocity(constants.star_vx, constants.star_vy);
 		this.setupFrames(10, 2, false);
@@ -1085,8 +1087,8 @@ var Mushroom = ItemFigure.extend({
 	},
 	release: function(mode) {
 		this.released = 4;
-		this.level.playSound('mushroom');
-		
+			var audio = new Audio(sounds.mushroom);
+			audio.play();
 		if(mode === mushroom_mode.plant)
 			this.setImage(images.objects, 548, 60);
 			
@@ -1250,7 +1252,8 @@ var Mario = Hero.extend({
 		}
 	},
 	victory: function() {
-		this.level.playMusic('success');
+		var music = new Audio(sounds.success);
+		music.play();
 		this.clearFrames();
 		this.view.show();
 		this.setImage(images.sprites, this.state === size_states.small ? 241 : 161, 81);
@@ -1259,7 +1262,8 @@ var Mario = Hero.extend({
 	shoot: function() {
 		if(!this.cooldown) {
 			this.cooldown = constants.cooldown;
-			this.level.playSound('shoot');
+			var audio = new Audio(sounds.shoot);
+			audio.play();
 			new Bullet(this);
 		}
 	},
@@ -1282,23 +1286,28 @@ var Mario = Hero.extend({
 		this.blinking = Math.max(2 * times * constants.blinkfactor, this.blinking || 0);
 	},
 	invincible: function() {
-		this.level.playMusic('invincibility');
+		var music = new Audio(sounds.invincibility);
+		music.play();
 		this.deadly = Math.floor(constants.invincible / constants.interval);
 		this.invulnerable = this.deadly;
 		this.blink(Math.ceil(this.deadly / (2 * constants.blinkfactor)));
 	},
 	grow: function() {
 		if(this.state === size_states.small) {
-			this.level.playSound('grow');
+			var audio = new Audio(sounds.grow);
+			audio.play();
 			this.setState(size_states.big);
 			this.blink(3);
 		}
 	},
 	shooter: function() {
-		if(this.state === size_states.small)
+		if(this.state === size_states.small){
 			this.grow();
-		else
-			this.level.playSound('grow');
+		}
+		else {
+			var audio = new Audio(sounds.grow);
+			audio.play();
+		}
 			
 		this.setMarioState(mario_states.fire);
 	},
@@ -1334,7 +1343,8 @@ var Mario = Hero.extend({
 		this.clearFrames();
 	},
 	jump: function() {
-		this.level.playSound('jump');
+		var audio = new Audio(sounds.jump);
+		audio.play();
 		this.vy = constants.jumping_v;
 	},
 	move: function() {
@@ -1374,7 +1384,8 @@ var Mario = Hero.extend({
 		this.level.world.parent().children('#coinNumber').text(this.coins);
 	},
 	addLife: function() {
-		this.level.playSound('liveupgrade');
+		var audio = new Audio(sounds.liveupdate);
+		audio.play();
 		this.setLifes(this.lifes + 1);
 	},
 	setLifes : function(lifes) {
@@ -1405,7 +1416,8 @@ var Mario = Hero.extend({
 		this.deathStepDown = Math.ceil(240 / this.deathFrames);
 		this.setupFrames(9, 2, false);
 		this.setImage(images.sprites, 81, 324);
-		this.level.playMusic('die');
+		var music = new Audio(sounds.die);
+		music.play();
 		this._super();
 	},
 	hurt: function(from) {
@@ -1419,7 +1431,8 @@ var Mario = Hero.extend({
 			this.invulnerable = Math.floor(constants.invulnerable / constants.interval);
 			this.blink(Math.ceil(this.invulnerable / (2 * constants.blinkfactor)));
 			this.setState(size_states.small);
-			this.level.playSound('hurt');			
+			var audio = new Audio(sounds.hurt);
+			audio.play();
 		}
 	},
 }, 'mario');
@@ -1531,11 +1544,13 @@ var Gumpa = Enemy.extend({
 		this.clearFrames();
 		
 		if(this.death_mode === death_modes.normal) {
-			this.level.playSound('enemy_die');
+			var audio = new Audio(sounds.enemy_die);
+			audio.play();
 			this.setImage(images.enemies, 102, 228);
 			this.deathCount = Math.ceil(600 / constants.interval);
 		} else if(this.death_mode === death_modes.shell) {
-			this.level.playSound('shell');
+			var audio = new Audio(sounds.shell);
+			audio.play();
 			this.setImage(images.enemies, 68, this.direction === directions.right ? 228 : 188);
 			this.deathFrames = Math.floor(250 / constants.interval);
 			this.deathDir = 1;
@@ -1666,7 +1681,8 @@ var GreenTurtle = Enemy.extend({
 			this.deathFrames = Math.floor(600 / constants.interval);
 			this.setImage(images.enemies, 102, 437);
 		} else if(this.deathMode === death_modes.shell) {
-			this.level.playSound('shell');
+			var audio = new Audio(sounds.shell);
+			audio.play();
 			this.setImage(images.enemies, 68, (this.state === size_states.small ? (this.direction === directions.right ? 437 : 382) : 325));
 		}
 	},
@@ -1691,7 +1707,8 @@ var GreenTurtle = Enemy.extend({
 		this._super();
 	},
 	hurt: function(opponent) {	
-		this.level.playSound('enemy_die');
+		var audio = new Audio(sounds.enemy_die);
+		audio.play();
 		
 		if(this.state === size_states.small)
 			return this.die();
@@ -1742,7 +1759,8 @@ var SpikedTurtle = Enemy.extend({
 		return true;
 	},
 	die: function() {
-		this.level.playSound('shell');
+		var audio = new Audio(sounds.shell);
+		audio.play();
 		this.clearFrames();
 		this._super();
 		this.setImage(images.enemies, 68, this.direction === directions.left ? 106 : 147);
@@ -1773,7 +1791,8 @@ var Plant = Enemy.extend({
 		this._super(0, 0);
 	},
 	die: function() {
-		this.level.playSound('shell');
+		var audio = new Audio(sounds.shell);
+		audio.play();
 		this.clearFrames();
 		this._super();
 	},
@@ -1938,11 +1957,13 @@ var Freddie = Enemy.extend({
 		
 		if(this.death_mode === death_modes.normal) {
 			this.setSize(1, 1);
-			this.level.playSound('enemy_die');
+			var audio = new Audio(sounds.enemy_die);
+			audio.play();
 			this.setImage(images.enemies, 0,0);
 			this.deathCount = Math.ceil(600 / constants.interval);
 		} else if(this.death_mode === death_modes.shell) {
-			this.level.playSound('shell');
+			var audio = new Audio(sounds.shell);
+			audio.play();
 			this.setImage(images.Freddie, 0, this.direction === directions.up ? 228 : 188);
 			this.deathFrames = Math.floor(250 / constants.interval);
 			this.deathDir = 1;
