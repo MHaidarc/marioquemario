@@ -1957,12 +1957,12 @@ var Freddie = Enemy.extend({
 		
 		if(this.death_mode === death_modes.normal) {
 			this.setSize(1, 1);
-			var audio = new Audio(sounds.enemy_die);
+			var audio = new Audio(sounds.eo);
 			audio.play();
 			this.setImage(images.enemies, 0,0);
 			this.deathCount = Math.ceil(600 / constants.interval);
 		} else if(this.death_mode === death_modes.shell) {
-			var audio = new Audio(sounds.shell);
+			var audio = new Audio(sounds.eo);
 			audio.play();
 			this.setImage(images.Freddie, 0, this.direction === directions.up ? 228 : 188);
 			this.deathFrames = Math.floor(250 / constants.interval);

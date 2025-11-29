@@ -44,7 +44,8 @@ const sounds = {
     grow  : AUDIOPATH + 'grow.wav',
     die : AUDIOPATH + 'die.wav',
     invincibility : AUDIOPATH + 'invincibility.mp3',
-    success : AUDIOPATH + 'success.wav'
+    success : AUDIOPATH + 'success.wav',
+    eo : AUDIOPATH + 'eo.wav'
 }
 const death_modes = {
     normal : 0,
