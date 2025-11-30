@@ -78,10 +78,10 @@ const constants = {
     star_vx : 4,
     star_vy : 16,
     bullet_v : 12,
-    max_coins : 100,
+    max_coins : 30,
     pipeplant_count : 150,
     pipeplant_v : 1,
-    invencible : 11000,
+    invincible : 11000,
     invulnerable : 1000,
     blinkfactor : 5,
 };

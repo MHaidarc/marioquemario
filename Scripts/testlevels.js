@@ -291,7 +291,7 @@ var definedLevels = [
 	,
 
 	{
-width: 215, // Comece pequeno, com 50 colunas de largura
+width: 250, // Comece pequeno, com 50 colunas de largura
 height: 15, // Altura padrão
 id: 1, // MUITO IMPORTANTE: Mantenha o id: 1
 background: 4, // Pode mudar o fundo (de 1 a 14)
@@ -364,22 +364,22 @@ data:
 ['', '', '', '', '', '', '', '', '', '', 'spikedturtle', 'grass_top', 'soil', 'soil', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', 'pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'grass_top', 'soil'],
+['', '', '', '', '', '', '','pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', 'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'grass_top', 'soil'],
+['', '', '', '', '', '', '',  'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right'],
 // Coluna 3 (Exemplo: Mario)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', 'greenturtle', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', 'starbox', '', '', '', '', '', 'greenturtle', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 2 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', 'starbox', '', '', '', '', 'greenturtle', 'grass_top', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
@@ -434,22 +434,22 @@ data:
 // Coluna 2 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil'],
+['', '', '', '', '', '', '', '', '', '', 'grass_top', 'ballmonster', 'stone', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
+['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', '', 'stone', 'soil', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
+['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', '', 'stone', 'soil', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
+['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', '', 'stone', 'soil', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
+['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', '', 'stone', 'soil', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
+['', '', '', '', '', '', '', '', '', 'grass_top', 'soil', '', 'stone', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', 'pipeplant', 'pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', 'pipeplant', 'pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', 'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', 'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right'],
 
 // Coluna 1 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
@@ -500,16 +500,170 @@ data:
 // Coluna 2 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 3 (Exemplo: Mario)
+['', '', '', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', 'staticplant', 'brown_block', '', '', 'coinbox', '', '', '', '', '', 'freddie', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', 'staticplant', 'brown_block', '', '', 'coinbox', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', 'spikedturtle', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', 'staticplant', 'brown_block', '', '', 'coinbox', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', 'staticplant', 'brown_block', '', '', 'coinbox', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', 'staticplant', 'brown_block', '', '', 'coinbox', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', 'staticplant', 'brown_block', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', 'staticplant', 'brown_block', 'brown_block', 'brown_block', '', '', 'brown_block', 'brown_block', 'brown_block', 'brown_block', 'brown_block', 'brown_block', 'brown_block'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', 'stone', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', 'stone', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', 'ballmonster', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', 'greenturtle', 'grass_top', 'soil', 'soil', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil' ,'soil', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil', 'soil', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', 'pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', 'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', 'spikedturtle', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', 'stone', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', 'starbox', '', '', '', 'freddie', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', 'stone', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', 'l'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', 'coin', 'brown_block', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'brown_block', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', 'spikedturtle', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', 'coin', 'brown_block', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'brown_block', 'stone', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
 ['', '', '', '', '', '', '', '', '', '', '', '', 'freddie', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', 'coin', 'brown_block', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone'],
 // Coluna 3 (Exemplo: Mario)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
@@ -520,119 +674,99 @@ data:
 // Coluna 1 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', 'brown_block', 'brown_block', 'brown_block', 'brown_block', 'brown_block', 'brown_block', '', 'brown_block', 'brown_block', 'brown_block', 'brown_block', 'brown_block'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', 'f', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', 'brown_block', 'stone', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 3 (Exemplo: Mario)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', 'freddie', 'grass_top', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', 'brown_block', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', 'stone', 'stone', 'stone', 'stone', '', '', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', 'stone', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', 'freddie', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
+
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'greenturtle', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_topl', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', 'freddie', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
+
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', 'ballmonster', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', '', '', 'staticplant', 'pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left', 'grass_top', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', '', '', '', 'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right', 'grass_top', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', 'ballmonster', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', 'grass_top', 'soil', 'soil', '', '', 'grass_top', 'soil', 'soil', 'soil', 'soil', 'soil', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', 'stone', 'stone', 'stone', 'stone', '', '', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone', 'stone'],
 // Coluna 4 (Exemplo: Vazio)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
@@ -650,9 +784,53 @@ data:
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 
 // Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', 'freddie', 'grass_top', 'soil'],
 // Coluna 2 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', 'coinbox', 'coinbox', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', 'coinbox', 'coinbox', 'coinbox', 'coinbox', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', 'pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', 'l', '', '', '', 'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', 'freddie', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'coinbox', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 3 (Exemplo: Mario)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 4 (Exemplo: Vazio)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+// Coluna 5 (Exemplo: Inimigo)
+['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+
+// Coluna 1 (Exemplo: Chão)
+['', '', '', '', '', '', '', 'staticplant', 'pipe_top_left', 'pipe_left', 'pipe_left', 'pipe_left', 'pipe_left', 'grass_top', 'soil'],
+// Coluna 2 (Exemplo: Chão)
+['', '', '', '', 'l', '', '', '', 'pipe_top_right', 'pipe_right', 'pipe_right', 'pipe_right', 'pipe_right', 'grass_top', 'soil'],
 // Coluna 3 (Exemplo: Mario)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
@@ -665,113 +843,11 @@ data:
 // Coluna 2 (Exemplo: Chão)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
+['', '', '', '', '', '', '', '', '', '', '', '', 'freddie', 'grass_top', 'soil'],
 // Coluna 4 (Exemplo: Vazio)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
 // Coluna 5 (Exemplo: Inimigo)
 ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
-// Coluna 1 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 2 (Exemplo: Chão)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 3 (Exemplo: Mario)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 4 (Exemplo: Vazio)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-// Coluna 5 (Exemplo: Inimigo)
-['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
-
 
 
 ]

@@ -1,0 +1,20 @@
+Milena de Souza Guimarães e Mateus Haidar Carvalho
+
+
+Fase 1: 
+jumping_v : 27 20 (ficar mais um pouco mais difícil),
+spiked_turtle_v : 1.5 para 3 (para ela ficar mais rápida)
+max_coins : 100 para 30 (limite menor de moedas)
+
+Fase 2: 
+O nome do monstro é 'freddie' e ele é inspirado no Freddie Mercury.
+Quando ele morre, ele canta.
+Imagem diferente, agora é um sprite do Freddie Mercury,
+this.setSpeed(constants.ballmonster_v) para this.setSpeed(constants.ballmonster_v*2); (para o Freddie ficar 
+duas vezes mais rápido que o gumpa)
+
+
+Fase 3:
+O nível tem 250 colunas. Ele exige que o jogador faça muitos saltos e tem uma dificuldade de média para alta, 
+com partes que talvez seja preciso jogar mais de uma vez para conseguir passar.
+ 
